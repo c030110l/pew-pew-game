@@ -30,4 +30,14 @@ class Player extends GameObject {
       objects.add(new Bullet());
     }
   }
+
+  void show() {
+    super.show();
+    /*strokeWeight(3);
+    stroke(black);
+    line(x, y, mouseX, Y);
+    stroke(white);
+    line(mouseX, y, mouseX, mouseY);
+    strokeWeight(1);*/
+  }
 }
