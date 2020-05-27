@@ -27,17 +27,7 @@ class Player extends GameObject {
 
   void  shoot() {
     if (mousePressed) {
-      objects.add(new Bullet());
+      objects.add(new Bullet(x, y, 5, 1, yellow));
     }
-  }
-
-  void show() {
-    super.show();
-    /*strokeWeight(3);
-    stroke(black);
-    line(x, y, mouseX, Y);
-    stroke(white);
-    line(mouseX, y, mouseX, mouseY);
-    strokeWeight(1);*/
   }
 }

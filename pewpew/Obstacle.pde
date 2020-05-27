@@ -5,7 +5,7 @@ class Obstacle extends GameObject {
 
   void act() {
     super.act();
-    if (dist(x, y, myPlayer.x, myPlayer.y)<size/2+myPlayer.size/2) {
+    if (touching(myPlayer)) {
       PVector bounce=new PVector(myPlayer.x-x, myPlayer.y-y);
       bounce.setMag(5);
       myPlayer.x=myPlayer.x+bounce.x;
